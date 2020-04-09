@@ -52,8 +52,8 @@ spec:
   releaseChannel:
     channel: REGULAR # {"type":"string","x-kustomize":{"setter":{"name":"gcloud.container.cluster.releaseChannel"}}}
   privateClusterConfig:
-    enablePrivateEndpoint: true
-    enablePrivateNodes: true
+    enablePrivateEndpoint: false # {"type":"boolean","x-kustomize":{"setter":{"name":"gcloud.container.cluster.enablePrivateEndpoint"}}}
+    enablePrivateNodes: false # {"type":"boolean","x-kustomize":{"setter":{"name":"gcloud.container.cluster.enablePrivateNodes"}}}
     masterIpv4CidrBlock: 172.16.0.0/28 # {"type":"string","x-kustomize":{"setter":{"name":"gcloud.container.cluster.masterIpv4CidrBlock"}}}
   masterAuthorizedNetworksConfig:
-    enabled: true
+    enabled: false # {"type":"boolean","x-kustomize":{"setter":{"name":"gcloud.container.cluster.masterAuthorizedNetworksConfig.enabled"}}}
