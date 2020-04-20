@@ -54,7 +54,7 @@ spec:
   privateClusterConfig:
     enablePrivateEndpoint: false # {"type":"boolean","x-kustomize":{"setter":{"name":"gcloud.container.cluster.enablePrivateEndpoint"}}}
     enablePrivateNodes: false # {"type":"boolean","x-kustomize":{"setter":{"name":"gcloud.container.cluster.enablePrivateNodes"}}}
-    masterIpv4CidrBlock: 172.16.0.0/28 # {"type":"string","x-kustomize":{"setter":{"name":"gcloud.container.cluster.masterIpv4CidrBlock"}}}
+    masterIpv4CidrBlock: "UNDEFINED" # {"type":"string","x-kustomize":{"setter":{"name":"gcloud.container.cluster.masterIpv4CidrBlock"}}}
     peeringName: "UNDEFINED" # {"type":"string","x-kustomize":{"setter":{"name":"gcloud.container.cluster.masterPeeringName"}}}
   masterAuthorizedNetworksConfig:
     enabled: false # {"type":"boolean","x-kustomize":{"setter":{"name":"gcloud.container.cluster.masterAuthorizedNetworksConfig.enabled"}}}
